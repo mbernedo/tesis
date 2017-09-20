@@ -42,4 +42,15 @@ public class Pearson {
         }
         return pxy / Math.sqrt(sx2 * sy2);
     }
+
+    public double prediccion(double correlacion) {
+        double pred = 0.0;
+        double suma = 0.0;
+        for (int i = 0; i < n; i++) {
+            suma += x[i];
+        }
+        double mediaX = suma / n;
+        pred = mediaX;
+        return pred;
+    }
 }
