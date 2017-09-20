@@ -16,6 +16,11 @@ public class Tesis {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        double[] a = {2, 2, 5};
+        double[] u = {3, 5, 2};
+        Pearson corr = new Pearson(a, u);
+        double rpta = corr.correlacion();
+        System.out.println(rpta);
     }
-    
+
 }

@@ -11,18 +11,16 @@ package tesis;
  */
 public class Pearson {
 
-    private double[] x;
-    private double[] y;
-    private int n;
-    public double a, b;
+    double[][] x;
+    int n, m;
 
-    public Pearson(double[] x, double[] y) {
+    public Pearson(double[][] x) {
         this.x = x;
-        this.y = y;
-        n = x.length;
+        this.n = x.length;
+        this.m = x[1].length;
     }
 
-    public double correlacion() {
+    public double correlacion(int posI, int posJ) {
         double suma = 0.0;
         for (int i = 0; i < n; i++) {
             suma += x[i];
